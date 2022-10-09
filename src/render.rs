@@ -1,6 +1,6 @@
 use image::{
     error::{EncodingError, ImageFormatHint},
-    DynamicImage, ImageBuffer, ImageError, ImageFormat, Rgba
+    DynamicImage, ImageBuffer, ImageError, ImageFormat, Rgba,
 };
 
 #[derive(Debug)]
