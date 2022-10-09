@@ -1,8 +1,7 @@
 use image::{
     error::{EncodingError, ImageFormatHint},
-    DynamicImage, ImageBuffer, ImageError, ImageFormat, Pixel, Rgb, Rgba,
+    DynamicImage, ImageBuffer, ImageError, ImageFormat, Rgba
 };
-use std::fs;
 
 #[derive(Debug)]
 pub struct ImageDimensions(pub u32, pub u32);
@@ -57,6 +56,8 @@ pub fn read_image(path: &str) -> Result<Image, ImageError> {
 
 #[cfg(test)]
 mod tests {
+    use std::fs;
+
     use image::Pixel;
 
     use super::*;
